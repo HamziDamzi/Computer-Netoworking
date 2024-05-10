@@ -1,7 +1,4 @@
-/*
-    Raw UDP sockets
-    Silver Moon (m00n.silv3r@gmail.com)
-*/
+
 #include<stdio.h> //for printf
 #include<string.h> //memset
 #include<sys/socket.h>    //for socket ofcourse
@@ -10,9 +7,6 @@
 #include<netinet/udp.h>   //Provides declarations for udp header
 #include<netinet/ip.h>    //Provides declarations for ip header
  
-/* 
-    96 bit (12 bytes) pseudo header needed for udp header checksum calculation 
-*/
 struct pseudo_header
 {
     u_int32_t source_address;
